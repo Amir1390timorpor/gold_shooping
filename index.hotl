@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه طلا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>فروشگاه طلا</h1>
+        <nav>
+            <a href="#">خانه</a>
+            <a href="#">محصولات</a>
+            <a href="#">سبد خرید</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <h3>گردنبند طلا</h3>
+                <p>قیمت: ۵۰۰۰۰۰۰ تومان</p>
+                <button onclick="addToCart('گردنبند طلا', 5000000)">افزودن به سبد</button>
+            </div>
+            <div class="product">
+                <h3>دستبند طلا</h3>
+                <p>قیمت: ۳۰۰۰۰۰۰ تومان</p>
+                <button onclick="addToCart('دستبند طلا', 3000000)">افزودن به سبد</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>سبد خرید</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">مجموع: ۰ تومان</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
